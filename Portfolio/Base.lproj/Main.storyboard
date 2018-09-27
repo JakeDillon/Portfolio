@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,51 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zae-QH-ACR">
+                                <rect key="frame" x="164.5" y="374" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO8-57-Kv5">
+                                <rect key="frame" x="164.5" y="504" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="wvD-Zz-iv3">
+                                <rect key="frame" x="67" y="96" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6qN-PH-DJF"/>
+                                    <constraint firstAttribute="width" constant="241" id="SFk-HR-G3h"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-Z6-G9a">
+                                <rect key="frame" x="164.5" y="634" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wvD-Zz-iv3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="2Nw-Ss-iIS"/>
+                            <constraint firstItem="OO8-57-Kv5" firstAttribute="top" secondItem="zae-QH-ACR" secondAttribute="bottom" constant="100" id="4nv-ih-QQI"/>
+                            <constraint firstItem="OO8-57-Kv5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5un-ho-nf8"/>
+                            <constraint firstItem="Orp-Z6-G9a" firstAttribute="top" secondItem="OO8-57-Kv5" secondAttribute="bottom" constant="100" id="QzI-o5-LCy"/>
+                            <constraint firstItem="zae-QH-ACR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WJE-JP-dsG"/>
+                            <constraint firstItem="wvD-Zz-iv3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rfP-pw-J2g"/>
+                            <constraint firstItem="zae-QH-ACR" firstAttribute="top" secondItem="wvD-Zz-iv3" secondAttribute="bottom" constant="150" id="vaF-9Z-Fu8"/>
+                            <constraint firstItem="Orp-Z6-G9a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ybH-yQ-8y4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image-1" width="128" height="96"/>
+    </resources>
 </document>
